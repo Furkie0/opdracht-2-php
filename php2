@@ -1,0 +1,48 @@
+
+<form method="ifelse">
+
+<label for="naam">username:</label><br>
+<input type="text" id="naam" name="naam"><br>
+
+<label for="password">wachtwoord:</label><br>
+<input type="password" id="password" name="password"><br>
+
+<input type="submit" name="" value="Verzenden"> <br>
+
+
+</form>
+
+<?php
+$variabele1 = 10;
+$variabele2 = 10;
+
+if($variabele1 < $variabele2) {
+    echo "De twee waarden zijn gelijk";
+} else 
+
+echo "De twee waarden zijn ongelijk";
+
+
+$variabele1 = 10;
+$variabele2 = 10;
+
+if($variabele1 > $variabele2) {
+    echo "De twee waarden zijn gelijk";
+} else 
+    echo "De twee waarden zijn gelijk";
+    
+    
+if (isset($_POST['verzenden'])) {
+    echo "er wordt op het knopje gedrukt.";
+} else {
+    echo "Op het knopje wordt er nog niet gedrukt.";
+}
+
+if(isset($_POST['password'])) {
+    $wachtwoord = $_POST['password'];
+    $username = "furkan";
+    echo "Furkan" . $wachtwoord . "Roc1234";
+
+}
+?>
+
